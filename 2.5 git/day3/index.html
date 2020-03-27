@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>freeCodeCamp Survey Form</h1>
+    <p style="color: white;text-align: center;"><em>Thank you for taking the time to help us improve the platform</em></p>
+    <div class="container">
+        <form>
+            <p >Name</p>
+            <input type="text" class="width"placeholder="Enter your name"Enter your name>
+            <p>Email</p>
+            <input type="text" class="width"placeholder="Enter your email"Enter your email>
+            <p>Age(optional)</p>
+            <input type="text"class="width"placeholder="Age"Age>
+            <p>Which option best describes your current role?</p>
+         
+            <select placeholder="" class="width">
+                <option placeholder="Select an option">Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Fulltimejob">Fulltimejob</option>
+                <option value="Fulltime Learner">Fulltime Learner</option>
+                <option value="Prefer Not to Say">Prefer Not to Say</option>
+                <option value="Other">Other</option>
+             
+            </select>
+
+            <p>Would you recommend freeCodeCamp to a friend</p>
+
+            <input type="radio" name="status" value="Definitely" checked>Definitely<br>
+            <input type="radio" name="status" value="Maybe">Maybe<br>
+            <input type="radio" name="status" value="Not sure">Not sure
+
+
+            <p>What is your favorite feature of freeCodeCamp?</p>
+            <select placeholder="" class="width">
+                <option placeholder="Select an option">Select an option</option>
+                <option value="Chalanges">Chalanges</option>
+                <option value="Project">Project</option>
+                <option value="Community">Community</option>
+                <option value="Opensource">Opensource</option>
+            </select>
+
+
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <form action="action_page.php">
+                <input type="checkbox" name="Front-end Projects" value="Front-end Projects"></input>Front-end
+                Projects<br>
+                <input type="checkbox" name="" value="">Back-end Projects</input><br>
+                <input type="checkbox" name="" value="">Data Visualization</input><br>
+                <input type="checkbox" name="" value="">Challenges</input><br>
+                <input type="checkbox" name="" value="">Open Source Community</input><br>
+                <input type="checkbox" name="" value="">Gitter help rooms</input><br>
+                <input type="checkbox" name="" value="">Videos</input><br>
+                <input type="checkbox" name="" value="">City Meetups</input><br>
+                <input type="checkbox" name="" value="">Wiki</input><br>
+                <input type="checkbox" name="" value="">Forum</input><br>
+                <input type="checkbox" name="" value="">Additional Courses</input><br>
+            </form>
+
+
+
+
+
+            <p>Which option best describes your current role?</p>
+            <textarea type="text" class="width1"></textarea>
+            <br>
+            <button type="button" name="submit" value="">Submit</button>
+
+
+
+
+
+        </form>
+    </div>
+</body>
+
+</html>

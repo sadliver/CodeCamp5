@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>1. Css syntax ประกอบด้วย</h1>
+    <table>
+        <tr>
+            <th>รูปแบบ</th>
+            <th>คำอธิบาย</th>
+        </tr>
+        <tr>
+            <td>&nbsp;1. seletor</td>
+            <td>&nbsp;ตำแหน่งที่เลือกว่าจะกำหนดลักษณะต่าง</td>
+        </tr>
+        <tr>
+            <td rowspan="2"> &nbsp;2. declaration</td>
+            <td>&nbsp;ประกาศลักษณะแบบ property (คุณสมบัติ)</td>
+        </tr>
+        <td>&nbsp;ประกาศลักษณะแบบ value (ค่าที่กำหนด)</td>
+
+    </table>
+    <hr>
+    <h1>2. การเขียน css มีกี่แบบ</h1>
+    <table>
+        <tr>
+            <th>รูปแบบ</th>
+            <th>คำอธิบาย</th>
+        </tr>
+        
+            <td>1. Inline css</td>
+            <td>&nbsp;เขียนภายใน HTML</td>
+        </tr>
+        <tr>
+            <td>2. external css</td>
+            <td>&nbsp;นำไฟล์ css เข้าจากภายนอก</td>
+        </tr>
+        <tr>
+            <td>3. internal css</td>
+            <td>&nbsp;เขียนภายใน Element html</td>
+        </tr>
+    </table>
+    <hr>
+    <h1>3. Selector มีกี่แบบอะไรบ้าง</h1>
+    <table>
+        <tr>
+            <th>รูปแบบ</th>
+            <th>คำอธิบาย</th>
+        </tr>
+        <tr>
+            <tr>
+                <td>1. Id</td>
+                <td>&nbsp;การกำหนดชื่อของ element โดยจะมีได้แค่ element เดียวเท่านั้น</td>
+            </tr>
+            <td>2. Class</td>
+            <td>&nbsp;การกำหนดชื่อของ element โดยสามารถมีได้หลาย element </td>
+        </tr>
+        <tr>
+            <td>3. Pseudo element</td>
+            <td>&nbsp;การกำหนดเฉพาะบางส่วนของ element</td>
+        </tr>
+        <tr>
+            <td>4. Pseudo class</td>
+            <td>&nbsp;การกำหนดเฉพาะบางสถานะของ class</td>
+        </tr>
+        <tr>
+            <td>5. Combinators</td>
+            <td>&nbsp;การกำหนดเงื่อนระหว่าง 2 selector</td>
+        </tr>
+        <tr>
+            <td>6. Attribute selector</td>
+            <td>&nbsp;การกำหนดการเลือกชื่อ attribute ใน element</td>
+        </tr>
+        </table>
+        <hr>
+        <h1>4. combinator มีกี่แบบอะไรบ้าง</h1>
+        <table>
+            <tr>
+                <th>รูปแบบ</th>
+                <th>คำอธิบาย</th>
+            </tr>
+            
+                <td>1. descendant selector (space) </td>
+                <td>&nbsp;a b = tag b ทั้งหมดที่อยู่ใน a</td>
+            </tr>
+            <tr>
+                <td>2. child selector (>)</td>
+                <td>&nbsp;a > b = tag b ที่เป็นลูกของ a</td></tr>
+            <tr>
+                <td>3. adjacent sibling selector (+)</td>
+                <td>&nbsp;a + b = tag b ที่อยู่ล่าง a และติดกับ a เท่านั้น</td>
+            </tr>
+            <tr>
+                <td>4. general sibling selector (~)</td>
+                <td>&nbsp;a ~ b = tag b ที่อยู่ล่าง a ทุก tag</td>
+            </tr>
+        </table>
+        <hr>
+
+<!--------------------------  test combinator  ----------------------->
+
+        <div class="top">
+            <span>top</span>
+                <div class="bot">
+                    <p>bot</p>
+                        <div class="mid">
+                            <h2>mid</h2>
+                                <div class="inside">
+                                    <h3>inside</h3>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        
+<!--------------------------  test combinator  ----------------------->
+<img src="https://img.kapook.com/u/2019/sireeporn/Pet-11/A1.jpg" class="pic">
+
+<div class="padding"></div>
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+</div>
+
+</body>
+</html>

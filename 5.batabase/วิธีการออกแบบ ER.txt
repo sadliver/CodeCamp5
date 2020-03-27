@@ -1,0 +1,5 @@
+วิธีออกแบบ ER 
+1. เขียน entity Set ทั้งหมด
+2. เขียน  Attributes ของ Entity set
+3. เขียน Realationship set และเขียน ratio constraints
+4. เขียน participation constraints

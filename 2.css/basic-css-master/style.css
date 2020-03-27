@@ -1,0 +1,28 @@
+h1 {
+  color: red;
+}
+
+div h1 {
+  color: blue;
+}
+
+/* p + ul {
+  background: #777;
+} */
+
+/* p ~ ul {
+  background: #999;
+} */
+
+span {
+  background-color: red;
+}
+
+/* 1st span */
+/* div > span {
+  background-color: DodgerBlue;
+}
+
+div > span > span {
+  background-color: greenyellow;
+} */

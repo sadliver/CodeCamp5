@@ -1,0 +1,60 @@
+*{
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+  }
+  th {
+    text-align: center;
+  }
+  th{
+      background-color: rgb(106, 145, 204);
+  }
+/***************** test combinator *************/
+
+
+.top span{
+      color: red;
+}
+
+
+.top p{
+    background-color: blue;
+}
+
+.pic {
+    border-radius: 50%;
+    border: rgb(0, 0, 0)(146, 84, 84);
+    width: 400px;
+    height: 400px;
+    opacity: 0.5;
+    margin: auto;
+}
+
+.padding{
+    padding: 50px;
+    background-color: red;
+    margin: 50 50 50 50;
+}
+/* 
+.top + .mid{
+    background-color: royalblue;
+} */
+/***************** test combinator *************/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: aqua;
+    padding: 10px;
+}
+.grid-item{
+    background-color: rgb(175, 74, 74);
+    padding: 1px;
+    margin: 2px;
+}

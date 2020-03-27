@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="syntax.css" />
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+    </style>
+    <title>CSS Basic</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Subject</th>
+        <th>Explain</th>
+      </tr>
+      <tr>
+        <td>CSS syntax ประกอบด้วยอะไรบ้าง</td>
+        <td>
+          CSS syntax ประกอบด้วย selector และ declaration โดยที่ selector คือ
+          การเลือก element ที่ต้องการปรับแต่ง ส่วน declaration
+          คือการประกาศลักษณะของ element นั้น ๆ โดย มี 2 องค์ประกอบหลักคือ
+          <li>property: คุณสมบัติ (background, color)</li>
+          <li>value: ค่าที่กำหนด (#fff, 20px)</li>
+          <pre>
+            <code class="language-css">
+                table { 
+                    border-collapse: 
+                    collapse; width: 100%; 
+                }
+            </code>
+          </pre>
+        </td>
+      </tr>
+      <tr>
+        <td>การเขียน CSS มีกี่แบบ อะไรบ้าง</td>
+        <td>
+          <ol>
+            <li>inline CSS: เขียนใน style tag ในไฟล์ HTML</li>
+            <li>external CSS: นำเข้าไฟล์ CSS จากภายนอก</li>
+            <li>internal CSS: เขียนภายใน HTML element</li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td>selector มีกี่แบบ ประกอบด้วยอะไรบ้าง</td>
+        <td>
+          <ol>
+            <li>
+              ID : การกำหนดชื่อของ element โดยจะมีได้แค่ element เดียวเท่านั้น
+            </li>
+            <li>
+              Class : การกำหนดชื่อของ element โดยสามารถมีได้หลาย element
+            </li>
+            <li>Pseudo element : การกำหนดเฉพาะบางส่วนของ element</li>
+            <li>Pseudo class : การกำหนดเฉพาะบางสถานะของ class</li>
+            <li>Combinators : การกำหนดเงื่อนระหว่าง 2 selector</li>
+            <li>
+              attribute selector : การกำหนดการเลือกชื่อ attribute ใน element
+            </li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td>combinator มีกี่แบบ ประกอบด้วยอะไรบ้าง</td>
+        <td>
+          <ol>
+            <li>
+              descendant selector (space) : a b = tag b ทั้งหมดที่อยู่ใน a
+            </li>
+            <li>
+              child selector (>) : a > b = tag b ที่เป็นลูกของ a ie.
+              <pre><code class="language-css">
+                .container > p { 
+                  max-width: 1100px; 
+                }</code></pre>
+            </li>
+            <li>
+              adjacent sibling selector (+) : a + b = tag b ที่อยู่ล่าง a
+              และติดกับ a เท่านั้น
+            </li>
+            <li>
+              general sibling selector (~) : a ~ b = tag b ที่อยู่ล่าง a ทุก tag
+            </li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+
+    <div class="container">
+      <h1>Teerapat</h1>
+      <h2>(Future) Software developer</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, hic.
+      </p>
+      <ul>
+        totem
+      </ul>
+      <ul>
+        inception
+      </ul>
+      <ul>
+        lucid dream
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+        vero!
+      </p>
+    </div>
+
+    <h1 style="margin-top: 40px;">Lorem ipsum dolor sit amet.</h1>
+    <h2>Lorem ipsum dolor sit.</h2>
+
+    <div>
+      <span
+        >[Span #1], in the div.
+        <span>[Span #2], in the span that's in the div.</span>
+      </span>
+    </div>
+    <span>[Span #3], not in the div at all.</span>
+
+    <!-- ul>li.item${Item$}*10 -->
+  </body>
+</html>
